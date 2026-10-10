@@ -1,0 +1,9 @@
+{
+  // k6 scripts run in k6's own JS runtime, not Bun/Node: k6 globals only.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "types": ["k6"]
+  },
+  "include": ["."]
+}

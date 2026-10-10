@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# saved sessions (storage states hold live tokens)
+.auth/
+
+# repo-local tool binaries (pinned k6)
+.tools/
+
+# machine-local env overrides
+env/*.local
+
+# Playwright output
+test-results/
+playwright-report/
+blob-report/
+
+# editors / OS
+.idea/
+.vscode/
+.DS_Store
