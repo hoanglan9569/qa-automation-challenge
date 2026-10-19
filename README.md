@@ -83,10 +83,10 @@ to it, and [the index](https://hoanglan9569.github.io/qa-automation-challenge/) 
 logs ([latest](https://hoanglan9569.github.io/qa-automation-challenge/latest/)). The last 100 runs are kept, up to
 500 MB, on the `gh-pages` branch.
 
-The two status badges at the top split what a run measures. **Tests on push** follows the runs a push starts, so
-it shows the state of the code. **Nightly check of the live site** follows the scheduled runs against DemoBlaze
-itself, so it turns red when the live site breaks a budget even though nothing in this repo changed: see finding
-[P5](#performance-findings).
+The two status badges at the top split the runs by trigger. **Tests on push** follows the runs a push starts: the
+code as it was checked, against the live site, when it last changed. **Nightly check of the live site** follows the
+scheduled runs, which repeat the same suite with no code change, so it turns red when DemoBlaze itself breaks a
+budget: see finding [P5](#performance-findings).
 
 | Job                                | Runs                                                                                         |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |
