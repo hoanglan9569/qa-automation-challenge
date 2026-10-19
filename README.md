@@ -1,6 +1,7 @@
 # qa-automation-challenge
 
-[![E2E, API & performance tests](https://github.com/hoanglan9569/qa-automation-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/hoanglan9569/qa-automation-challenge/actions/workflows/ci.yml)
+[![Tests on push](https://img.shields.io/github/actions/workflow/status/hoanglan9569/qa-automation-challenge/ci.yml?branch=main&event=push&label=tests%20on%20push)](https://github.com/hoanglan9569/qa-automation-challenge/actions/workflows/ci.yml)
+[![Nightly check of the live site](https://img.shields.io/github/actions/workflow/status/hoanglan9569/qa-automation-challenge/ci.yml?branch=main&event=schedule&label=nightly%20check%20of%20the%20live%20site)](#ci)
 [![Test reports](https://img.shields.io/badge/test_reports-GitHub_Pages-2ea44f)](https://hoanglan9569.github.io/qa-automation-challenge/)
 
 Test automation for [DemoBlaze](https://www.demoblaze.com/), built for the
@@ -81,6 +82,11 @@ Every run on `main` also publishes its report to GitHub Pages, at `runs/<run num
 to it, and [the index](https://hoanglan9569.github.io/qa-automation-challenge/) lists every run with its result and
 logs ([latest](https://hoanglan9569.github.io/qa-automation-challenge/latest/)). The last 100 runs are kept, up to
 500 MB, on the `gh-pages` branch.
+
+The two status badges at the top split what a run measures. **Tests on push** follows the runs a push starts, so
+it shows the state of the code. **Nightly check of the live site** follows the scheduled runs against DemoBlaze
+itself, so it turns red when the live site breaks a budget even though nothing in this repo changed: see finding
+[P5](#performance-findings).
 
 | Job                                | Runs                                                                                         |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -230,12 +236,13 @@ and avoids #4.
 
 From repeated smoke runs against production:
 
-| #   | Finding                                                                                                            |
-| --- | ------------------------------------------------------------------------------------------------------------------ |
-| P1  | Typical latency is fine: ~270–310 ms median per call, every response correct                                       |
-| P2  | Occasional slow calls of 1–1.8 s, more of them under higher load (likely cold starts)                              |
-| P3  | The cart page slows as the cart grows: ~555 ms with 1 line, ~870 ms with 10. It makes one `/view` request per line |
-| P4  | Login p95 is 1.2–1.4 s, against an 800 ms target, while its median (~290 ms) is fine                               |
+| #   | Finding                                                                                                                                                                                                                                                                               |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P1  | Typical latency is fine: ~270–310 ms median per call, every response correct                                                                                                                                                                                                          |
+| P2  | Occasional slow calls of 1–1.8 s, more of them under higher load (likely cold starts)                                                                                                                                                                                                 |
+| P3  | The cart page slows as the cart grows: ~555 ms with 1 line, ~870 ms with 10. It makes one `/view` request per line                                                                                                                                                                    |
+| P4  | Login p95 is 1.2–1.4 s, against an 800 ms target, while its median (~290 ms) is fine                                                                                                                                                                                                  |
+| P5  | Nightly runs #9 to #11 (2026-10-17 to 19) broke the budgets: catalog median 1.16 s (budget 500 ms); p95 over the 2 s budget for login (2.08 s), the catalog (2.12 and 2.29 s) and `/viewcart` (2.14 and 2.15 s); cart page p95 4.43 s (budget 3.5 s). Only the performance job failed |
 
 ## License
 
