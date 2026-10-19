@@ -11,7 +11,7 @@ Test automation for [DemoBlaze](https://www.demoblaze.com/), built for the
 
 Covers login, add to cart and place an order — each through both the UI and the API — plus the
 performance of the catalog, login and cart. Found along the way:
-[5 site defects](#known-defects) and [4 performance findings](#performance-findings).
+[5 site defects](#known-defects) and [5 performance findings](#performance-findings).
 
 ## Run
 
