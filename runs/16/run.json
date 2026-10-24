@@ -1,0 +1,13 @@
+{
+  "number": 16,
+  "url": "https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/40073847453",
+  "trigger": "nightly",
+  "sha": "e5b963a256b130b16ab45c1f7c6cde07abbed849",
+  "subject": "README: count finding P5 in the summary [skip ci]",
+  "startTime": "2026-10-24T07:22:11.261Z",
+  "duration": 243165.2060546875,
+  "passed": 100,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0
+}

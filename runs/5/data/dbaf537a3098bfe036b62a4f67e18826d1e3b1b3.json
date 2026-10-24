@@ -1,0 +1,198 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "login returns a session token": {
+                            "name": "login returns a session token",
+                            "path": "::setup::login returns a session token",
+                            "id": "a437eb0f7f5bbc07dba8ba33bed45c34",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "the token belongs to the user": {
+                            "name": "the token belongs to the user",
+                            "path": "::setup::the token belongs to the user",
+                            "id": "c282848941e4174d8ab4798482479569",
+                            "passes": 2,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {
+            "login returns a session token": {
+                "passes": 30,
+                "fails": 0,
+                "name": "login returns a session token",
+                "path": "::login returns a session token",
+                "id": "22d9ae862c9cf3169b7860f69899ba04"
+            },
+            "the token belongs to the user": {
+                "path": "::the token belongs to the user",
+                "id": "8549a57452f64568d2ae254507457ded",
+                "passes": 30,
+                "fails": 0,
+                "name": "the token belongs to the user"
+            }
+        }
+    },
+    "metrics": {
+        "http_req_tls_handshaking": {
+            "avg": 0.5626607968749999,
+            "min": 0,
+            "med": 0,
+            "max": 15.621528,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_sending": {
+            "max": 0.190486,
+            "p(90)": 0.16216930000000002,
+            "p(95)": 0.17173879999999997,
+            "avg": 0.12289314062500005,
+            "min": 0.074439,
+            "med": 0.1224185
+        },
+        "http_req_connecting": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.136389984375,
+            "min": 0,
+            "med": 0,
+            "max": 2.94431
+        },
+        "http_req_waiting": {
+            "avg": 57.67247864062497,
+            "min": 39.409881,
+            "med": 51.950082,
+            "max": 165.824608,
+            "p(90)": 72.8556936,
+            "p(95)": 81.28132224999999
+        },
+        "data_sent": {
+            "rate": 1110.9672594886065,
+            "count": 16919
+        },
+        "vus": {
+            "value": 0,
+            "min": 0,
+            "max": 0
+        },
+        "checks": {
+            "passes": 64,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration{name:warmup}": {
+            "p(95)": 63.267181349999994,
+            "avg": 51.809922,
+            "min": 39.559477,
+            "med": 51.936522999999994,
+            "max": 63.807165,
+            "p(90)": 62.7271977,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 64,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "http_req_blocked": {
+            "p(90)": 0.000638,
+            "p(95)": 0.0009028499999999997,
+            "avg": 0.7230034374999995,
+            "min": 0.00023,
+            "med": 0.0003255,
+            "max": 19.789607
+        },
+        "data_received": {
+            "count": 35273,
+            "rate": 2316.162193033963
+        },
+        "iterations": {
+            "count": 30,
+            "rate": 1.9699165308031323
+        },
+        "http_req_duration": {
+            "avg": 57.908428468749996,
+            "min": 39.559477,
+            "med": 52.196339,
+            "max": 166.06993,
+            "p(90)": 73.1017174,
+            "p(95)": 81.56135689999998
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 57.908428468749996,
+            "min": 39.559477,
+            "med": 52.196339,
+            "max": 166.06993,
+            "p(90)": 73.1017174,
+            "p(95)": 81.56135689999998
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "http_reqs": {
+            "count": 64,
+            "rate": 4.202488599046682
+        },
+        "http_req_receiving": {
+            "min": 0.061555,
+            "med": 0.10108349999999999,
+            "max": 0.351185,
+            "p(90)": 0.1314905,
+            "p(95)": 0.23035674999999942,
+            "avg": 0.11305668750000002
+        },
+        "http_req_duration{name:check}": {
+            "min": 41.084149,
+            "med": 45.6600255,
+            "max": 57.267073,
+            "p(90)": 50.936535500000005,
+            "p(95)": 53.7671464,
+            "avg": 46.44646053333334,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        },
+        "iteration_duration": {
+            "max": 209.048231,
+            "p(90)": 133.72225340000003,
+            "p(95)": 180.70593739999987,
+            "avg": 118.02584306666664,
+            "min": 95.091261,
+            "med": 110.1926905
+        },
+        "http_req_duration{name:login}": {
+            "med": 58.9280275,
+            "max": 166.06993,
+            "p(90)": 84.95146110000005,
+            "p(95)": 135.3167395999999,
+            "avg": 70.18353060000001,
+            "min": 50.320659,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        }
+    }
+}

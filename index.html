@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test reports · hoanglan9569/qa-automation-challenge</title>
+  <style>
+    :root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #fff; --line: #d1d9e0;
+      --link: #0969da; --passed: #1a7f37; --failed: #d1242f; --flaky: #9a6700; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #f0f6fc; --muted: #9198a1; --bg: #0d1117; --line: #3d444d;
+        --link: #4493f8; --passed: #3fb950; --failed: #f85149; --flaky: #d29922; }
+    }
+    body { max-width: 1200px; margin: 0 auto; padding: 24px 16px; font: 14px/1.5 system-ui, sans-serif;
+      color: var(--fg); background: var(--bg); }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+    th { color: var(--muted); font-weight: 600; }
+    td.commit { white-space: normal; min-width: 240px; }
+    tr.passed .result { color: var(--passed); }
+    tr.failed .result { color: var(--failed); }
+    tr.flaky .result { color: var(--flaky); }
+    code { font: 12px ui-monospace, monospace; }
+  </style>
+</head>
+<body>
+  <h1>Test reports</h1>
+  <p>
+    Every run of <a href="https://github.com/hoanglan9569/qa-automation-challenge/actions">E2E, API &#38; performance tests</a> on <code>main</code>, newest
+    first, each with its own Playwright report. The last 100 runs are kept, up to 500 MB.
+    <a href="latest/">Latest report →</a>
+  </p>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr><th>Run</th><th>Result</th><th>Started</th><th>Took</th><th>Trigger</th><th>Commit</th><th></th></tr>
+      </thead>
+      <tbody>
+      <tr class="passed">
+        <td><a href="runs/16/">#16</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-24 07:22:11 +00:00</td>
+        <td>4m 3s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/e5b963a256b130b16ab45c1f7c6cde07abbed849"><code>e5b963a</code></a> README: count finding P5 in the summary [skip ci]</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/40073847453">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/15/">#15</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-23 07:38:00 +00:00</td>
+        <td>4m 30s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/e5b963a256b130b16ab45c1f7c6cde07abbed849"><code>e5b963a</code></a> README: count finding P5 in the summary [skip ci]</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39919033700">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/14/">#14</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-22 07:40:38 +00:00</td>
+        <td>4m 25s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/e5b963a256b130b16ab45c1f7c6cde07abbed849"><code>e5b963a</code></a> README: count finding P5 in the summary [skip ci]</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39742117751">logs</a></td>
+      </tr>
+      <tr class="failed">
+        <td><a href="runs/13/">#13</a></td>
+        <td class="result">✘ 1 failed · 99 passed</td>
+        <td>2026-10-21 07:44:55 +00:00</td>
+        <td>4m 30s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/e5b963a256b130b16ab45c1f7c6cde07abbed849"><code>e5b963a</code></a> README: count finding P5 in the summary [skip ci]</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39564145375">logs</a></td>
+      </tr>
+      <tr class="failed">
+        <td><a href="runs/12/">#12</a></td>
+        <td class="result">✘ 5 failed · 93 passed · 2 flaky</td>
+        <td>2026-10-20 07:40:43 +00:00</td>
+        <td>6m 12s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/e5b963a256b130b16ab45c1f7c6cde07abbed849"><code>e5b963a</code></a> README: count finding P5 in the summary [skip ci]</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39388074053">logs</a></td>
+      </tr>
+      <tr class="failed">
+        <td><a href="runs/11/">#11</a></td>
+        <td class="result">✘ 3 failed · 97 passed</td>
+        <td>2026-10-19 07:52:36 +00:00</td>
+        <td>4m 31s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39218809591">logs</a></td>
+      </tr>
+      <tr class="failed">
+        <td><a href="runs/10/">#10</a></td>
+        <td class="result">✘ 1 failed · 98 passed · 1 flaky</td>
+        <td>2026-10-18 07:16:59 +00:00</td>
+        <td>3m 0s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39107066105">logs</a></td>
+      </tr>
+      <tr class="failed">
+        <td><a href="runs/9/">#9</a></td>
+        <td class="result">✘ 1 failed · 99 passed</td>
+        <td>2026-10-17 07:00:53 +00:00</td>
+        <td>3m 20s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/39012037395">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/8/">#8</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-16 07:16:36 +00:00</td>
+        <td>3m 46s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38866165493">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/7/">#7</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-15 07:31:32 +00:00</td>
+        <td>4m 31s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38699315377">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/6/">#6</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-14 07:43:51 +00:00</td>
+        <td>3m 5s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38530221830">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/5/">#5</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-13 09:30:22 +00:00</td>
+        <td>4m 45s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38376772242">logs</a></td>
+      </tr>
+      <tr class="flaky">
+        <td><a href="runs/4/">#4</a></td>
+        <td class="result">⚠ 99 passed · 1 flaky</td>
+        <td>2026-10-12 09:20:11 +00:00</td>
+        <td>4m 20s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38229204229">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/3/">#3</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-11 08:59:40 +00:00</td>
+        <td>4m 37s</td>
+        <td>nightly</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38126757042">logs</a></td>
+      </tr>
+      <tr class="passed">
+        <td><a href="runs/2/">#2</a></td>
+        <td class="result">✔ 100 passed</td>
+        <td>2026-10-10 22:05:42 +00:00</td>
+        <td>4m 52s</td>
+        <td>push</td>
+        <td class="commit"><a href="https://github.com/hoanglan9569/qa-automation-challenge/commit/4b8ed649a90ca45d426ceb719a68d740af8fd6fd"><code>4b8ed64</code></a> Playwright + k6 test automation for DemoBlaze</td>
+        <td><a href="https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38090106855">logs</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
