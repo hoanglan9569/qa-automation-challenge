@@ -1,0 +1,202 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 15085,
+            "rate": 773.4271509180095
+        },
+        "http_req_duration{name:view}": {
+            "max": 2389.299595,
+            "p(90)": 2086.1661624000003,
+            "p(95)": 2290.8645935999994,
+            "avg": 482.3163482142858,
+            "min": 69.274104,
+            "med": 79.547017,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": true
+            }
+        },
+        "http_reqs": {
+            "count": 60,
+            "rate": 3.0762763709035843
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 424.5869654666667,
+            "min": 69.274104,
+            "med": 84.748265,
+            "max": 2446.652572,
+            "p(90)": 1768.7154378000005,
+            "p(95)": 2330.9975779499996
+        },
+        "http_req_connecting": {
+            "p(95)": 4.8377881,
+            "avg": 0.40599756666666664,
+            "min": 0,
+            "med": 0,
+            "max": 4.978845,
+            "p(90)": 0
+        },
+        "http_req_duration{name:entries}": {
+            "avg": 413.2361965357143,
+            "min": 73.174502,
+            "med": 87.096847,
+            "max": 2446.652572,
+            "p(90)": 1522.7270336000001,
+            "p(95)": 2120.368907149999,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": true
+            }
+        },
+        "iterations": {
+            "count": 28,
+            "rate": 1.435595639755006
+        },
+        "dropped_iterations": {
+            "count": 2,
+            "rate": 0.10254254569678614
+        },
+        "http_req_duration": {
+            "max": 2446.652572,
+            "p(90)": 1768.7154378000005,
+            "p(95)": 2330.9975779499996,
+            "avg": 424.5869654666667,
+            "min": 69.274104,
+            "med": 84.748265
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 4
+        },
+        "checks": {
+            "fails": 0,
+            "passes": 60,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "http_req_waiting": {
+            "avg": 424.11124601666666,
+            "min": 69.048559,
+            "med": 84.152964,
+            "max": 2445.837974,
+            "p(90)": 1768.1893858000005,
+            "p(95)": 2330.45739125
+        },
+        "data_received": {
+            "count": 131087,
+            "rate": 6720.997343877302
+        },
+        "http_req_tls_handshaking": {
+            "avg": 3.364261216666667,
+            "min": 0,
+            "med": 0,
+            "max": 46.295012,
+            "p(90)": 0,
+            "p(95)": 37.359952
+        },
+        "iteration_duration": {
+            "max": 4559.30996,
+            "p(90)": 3940.9896928000003,
+            "p(95)": 4339.1778171999995,
+            "avg": 902.5846637857142,
+            "min": 142.845985,
+            "med": 169.77178199999997
+        },
+        "http_req_sending": {
+            "med": 0.09241949999999999,
+            "max": 0.139914,
+            "p(90)": 0.11569650000000001,
+            "p(95)": 0.11850055,
+            "avg": 0.09239566666666668,
+            "min": 0.030928
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 60,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "vus_max": {
+            "max": 4,
+            "value": 4,
+            "min": 2
+        },
+        "http_req_blocked": {
+            "med": 0.0003405,
+            "max": 51.244906,
+            "p(90)": 0.0007950000000000001,
+            "p(95)": 42.79075365,
+            "avg": 3.7948615666666683,
+            "min": 0.00025
+        },
+        "http_req_duration{name:warmup}": {
+            "avg": 99.93666875,
+            "min": 69.361604,
+            "med": 81.98655149999999,
+            "max": 166.411968,
+            "p(90)": 143.9810112,
+            "p(95)": 155.19648959999998,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_receiving": {
+            "min": 0.039345,
+            "med": 0.374637,
+            "max": 2.410241,
+            "p(90)": 0.7307085,
+            "p(95)": 0.7669413499999996,
+            "avg": 0.3833237833333334
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "catalog lists products": {
+                            "name": "catalog lists products",
+                            "path": "::setup::catalog lists products",
+                            "id": "1b167e909e440fdd1b42a0132beed1a2",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "product has a title and a price": {
+                            "id": "98dea1bde18eb4387a173b7c9e30dfc9",
+                            "passes": 2,
+                            "fails": 0,
+                            "name": "product has a title and a price",
+                            "path": "::setup::product has a title and a price"
+                        }
+                    }
+            }
+        },
+        "checks": {
+            "catalog lists products": {
+                "passes": 28,
+                "fails": 0,
+                "name": "catalog lists products",
+                "path": "::catalog lists products",
+                "id": "9b101fc49b2a3feced281020cd8efb24"
+            },
+            "product has a title and a price": {
+                "name": "product has a title and a price",
+                "path": "::product has a title and a price",
+                "id": "69f0c14497a8d50baf3acab5c72c79e5",
+                "passes": 28,
+                "fails": 0
+            }
+        },
+        "name": "",
+        "path": ""
+    }
+}

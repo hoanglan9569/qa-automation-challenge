@@ -1,0 +1,13 @@
+{
+  "number": 7,
+  "url": "https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/38699315377",
+  "trigger": "nightly",
+  "sha": "4b8ed649a90ca45d426ceb719a68d740af8fd6fd",
+  "subject": "Playwright + k6 test automation for DemoBlaze",
+  "startTime": "2026-10-15T07:31:32.822Z",
+  "duration": 270528.47412109375,
+  "passed": 100,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0
+}
