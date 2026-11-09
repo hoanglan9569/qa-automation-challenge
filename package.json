@@ -27,7 +27,8 @@
     "lint": "bun --bun eslint .",
     "lint:fix": "bun --bun eslint . --fix",
     "format": "bun --bun prettier . --write",
-    "format:check": "bun --bun prettier . --check"
+    "format:check": "bun --bun prettier . --check",
+    "check:playwright": "bun run scripts/check-playwright-rules.ts"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

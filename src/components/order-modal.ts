@@ -66,6 +66,7 @@ export class OrderModal {
    */
   private async waitForCartKey(): Promise<void> {
     const key = await this.page
+      // last-resort: reads window.usern and document.cookie to prevent empty /deletecart defect
       .waitForFunction(() => {
         const loggedIn = document.cookie.split(/;\s*/).some((cookie) => cookie.startsWith('tokenp_='));
         if (!loggedIn) return { key: document.cookie };

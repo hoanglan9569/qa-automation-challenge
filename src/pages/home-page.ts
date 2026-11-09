@@ -20,13 +20,12 @@ export class HomePage extends BasePage {
   }
 
   async openProduct(title: string): Promise<void> {
-    // The grid reflows as each product image loads, which can move a link out
-    // from under a click mid-press (seen on Firefox); let it settle first.
     await expect
       .poll(
         () =>
           this.products
             .locator('img')
+            // last-resort: reads image.complete DOM properties to ensure grid layout settled
             .evaluateAll((images: HTMLImageElement[]) => images.length > 0 && images.every((image) => image.complete)),
         { message: 'catalog images have loaded', timeout: Timeout.SETTLE },
       )

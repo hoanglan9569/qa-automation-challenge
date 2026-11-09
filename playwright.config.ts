@@ -24,7 +24,7 @@ export default defineConfig({
   testDir: './tests',
   globalSetup: './src/global-setup.ts',
   timeout: Timeout.TEST,
-  expect: { timeout: Timeout.EXPECT },
+  expect: { timeout: Timeout.DEFAULT },
   fullyParallel: true,
   forbidOnly: CI,
   retries: CI ? 2 : 0,
@@ -33,7 +33,8 @@ export default defineConfig({
   use: {
     baseURL: env.baseUrl,
     headless: HEADLESS,
-    actionTimeout: Timeout.ACTION,
+    actionTimeout: Timeout.DEFAULT,
+    navigationTimeout: Timeout.DEFAULT,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
