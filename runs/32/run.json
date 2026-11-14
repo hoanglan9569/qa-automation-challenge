@@ -1,0 +1,13 @@
+{
+  "number": 32,
+  "url": "https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/42584399868",
+  "trigger": "push",
+  "sha": "6fb29c2a2f02fcf0dcf37e872c1dd8b358a5d29e",
+  "subject": "Playwright lint: catch a promise sleep under any name; in-page sampling pauses take a last-resort reason",
+  "startTime": "2026-11-09T08:13:57.409Z",
+  "duration": 185104.83911132812,
+  "passed": 95,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0
+}
