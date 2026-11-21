@@ -1,0 +1,13 @@
+{
+  "number": 42,
+  "url": "https://github.com/hoanglan9569/qa-automation-challenge/actions/runs/44068249382",
+  "trigger": "nightly",
+  "sha": "c6b8f304f8fa2e06027dee03d25bdcd78324c3af",
+  "subject": "Keep the vendored Playwright lint copy out of Prettier",
+  "startTime": "2026-11-17T10:48:51.187Z",
+  "duration": 268468.1770019531,
+  "passed": 95,
+  "failed": 5,
+  "flaky": 0,
+  "skipped": 0
+}
