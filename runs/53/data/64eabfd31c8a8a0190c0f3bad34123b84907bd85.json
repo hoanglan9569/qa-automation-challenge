@@ -1,0 +1,198 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "avg": 75.73576878125003,
+            "min": 43.618022,
+            "med": 50.791137,
+            "max": 496.842205,
+            "p(90)": 164.2477983000001,
+            "p(95)": 191.12488694999993
+        },
+        "http_req_duration": {
+            "p(95)": 191.12488694999993,
+            "avg": 75.73576878125003,
+            "min": 43.618022,
+            "med": 50.791137,
+            "max": 496.842205,
+            "p(90)": 164.2477983000001
+        },
+        "http_req_blocked": {
+            "avg": 1.5688014531250005,
+            "min": 0.00024,
+            "med": 0.000341,
+            "max": 35.867599,
+            "p(90)": 0.0004920000000000001,
+            "p(95)": 0.000658
+        },
+        "http_req_duration{name:view}": {
+            "avg": 60.76702096666667,
+            "min": 43.618022,
+            "med": 46.9634605,
+            "max": 207.102129,
+            "p(90)": 83.31887580000007,
+            "p(95)": 158.28849389999988,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        },
+        "http_req_tls_handshaking": {
+            "avg": 1.0206130468749999,
+            "min": 0,
+            "med": 0,
+            "max": 23.384721,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 126046,
+            "rate": 8268.002434782999
+        },
+        "iterations": {
+            "count": 30,
+            "rate": 1.9678535855440866
+        },
+        "http_req_duration{name:entries}": {
+            "med": 53.8294995,
+            "max": 496.842205,
+            "p(90)": 184.4985867,
+            "p(95)": 298.43918564999944,
+            "avg": 93.8986865,
+            "min": 47.749285,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        },
+        "http_req_duration{name:warmup}": {
+            "avg": 51.7794945,
+            "min": 50.162371,
+            "med": 51.593778,
+            "max": 53.768051,
+            "p(90)": 53.279952200000004,
+            "p(95)": 53.5240016,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 64,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "http_req_sending": {
+            "avg": 0.080766265625,
+            "min": 0.026219,
+            "med": 0.0812915,
+            "max": 0.118811,
+            "p(90)": 0.0988067,
+            "p(95)": 0.10320285
+        },
+        "http_req_receiving": {
+            "med": 0.13062200000000002,
+            "max": 0.897903,
+            "p(90)": 0.817815,
+            "p(95)": 0.8653171,
+            "avg": 0.37790328125000006,
+            "min": 0.027261
+        },
+        "vus": {
+            "min": 0,
+            "max": 1,
+            "value": 0
+        },
+        "checks": {
+            "passes": 64,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "data_sent": {
+            "count": 11931,
+            "rate": 782.6153709708833
+        },
+        "http_reqs": {
+            "count": 64,
+            "rate": 4.198087649160718
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 12.169091,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.5287007968749999,
+            "min": 0
+        },
+        "http_req_waiting": {
+            "avg": 75.277099234375,
+            "min": 43.502216,
+            "med": 50.3332555,
+            "max": 495.975145,
+            "p(90)": 163.7248022000001,
+            "p(95)": 190.39403259999995
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "iteration_duration": {
+            "avg": 157.18943543333336,
+            "min": 94.850621,
+            "med": 102.5751435,
+            "max": 628.543737,
+            "p(90)": 282.8988347000002,
+            "p(95)": 487.2822529499995
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "catalog lists products": {
+                            "name": "catalog lists products",
+                            "path": "::setup::catalog lists products",
+                            "id": "1b167e909e440fdd1b42a0132beed1a2",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "product has a title and a price": {
+                            "name": "product has a title and a price",
+                            "path": "::setup::product has a title and a price",
+                            "id": "98dea1bde18eb4387a173b7c9e30dfc9",
+                            "passes": 2,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {
+            "catalog lists products": {
+                "name": "catalog lists products",
+                "path": "::catalog lists products",
+                "id": "9b101fc49b2a3feced281020cd8efb24",
+                "passes": 30,
+                "fails": 0
+            },
+            "product has a title and a price": {
+                "passes": 30,
+                "fails": 0,
+                "name": "product has a title and a price",
+                "path": "::product has a title and a price",
+                "id": "69f0c14497a8d50baf3acab5c72c79e5"
+            }
+        },
+        "name": "",
+        "path": ""
+    }
+}

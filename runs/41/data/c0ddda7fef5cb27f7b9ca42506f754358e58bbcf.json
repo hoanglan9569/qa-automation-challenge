@@ -1,0 +1,202 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 64,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "http_req_blocked": {
+            "p(90)": 0.0006000000000000001,
+            "p(95)": 14.343887749999901,
+            "avg": 1.1225033437500003,
+            "min": 0.000222,
+            "med": 0.000349,
+            "max": 19.591892
+        },
+        "iterations": {
+            "count": 30,
+            "rate": 1.9499758197733414
+        },
+        "http_req_sending": {
+            "min": 0.033632,
+            "med": 0.0772455,
+            "max": 0.145444,
+            "p(90)": 0.1199324,
+            "p(95)": 0.1216886,
+            "avg": 0.08252559374999999
+        },
+        "http_req_connecting": {
+            "p(95)": 1.9509301999999868,
+            "avg": 0.18210371875,
+            "min": 0,
+            "med": 0,
+            "max": 3.343565,
+            "p(90)": 0
+        },
+        "vus": {
+            "min": 0,
+            "max": 3,
+            "value": 0
+        },
+        "dropped_iterations": {
+            "count": 1,
+            "rate": 0.0649991939924447
+        },
+        "iteration_duration": {
+            "med": 125.01365050000001,
+            "max": 1601.181713,
+            "p(90)": 1017.2056336000003,
+            "p(95)": 1306.1511290999995,
+            "avg": 299.6062132,
+            "min": 105.942824
+        },
+        "http_reqs": {
+            "count": 64,
+            "rate": 4.159948415516461
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 16.355029,
+            "p(90)": 0,
+            "p(95)": 11.818929549999922,
+            "avg": 0.922838890625
+        },
+        "http_req_waiting": {
+            "p(90)": 344.9069015000006,
+            "p(95)": 848.5330279999985,
+            "avg": 142.78781289062505,
+            "min": 44.250028,
+            "med": 61.524724,
+            "max": 993.143619
+        },
+        "data_received": {
+            "count": 41038,
+            "rate": 2667.436923061946
+        },
+        "http_req_duration{name:login}": {
+            "p(95)": 991.70352415,
+            "avg": 210.7368737333334,
+            "min": 58.113241,
+            "med": 73.5639565,
+            "max": 993.659864,
+            "p(90)": 900.6744989000001,
+            "thresholds": {
+                "p(95)<2000": false,
+                "med<500": false
+            }
+        },
+        "vus_max": {
+            "value": 3,
+            "min": 2,
+            "max": 3
+        },
+        "checks": {
+            "passes": 64,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "http_req_duration": {
+            "min": 44.373316,
+            "med": 61.725503,
+            "max": 993.659864,
+            "p(90)": 345.0185102000006,
+            "p(95)": 848.7454657499984,
+            "avg": 142.95755240625
+        },
+        "http_req_receiving": {
+            "max": 0.416533,
+            "p(90)": 0.1079498,
+            "p(95)": 0.17848994999999998,
+            "avg": 0.08721392187499999,
+            "min": 0.034086,
+            "med": 0.0745285
+        },
+        "data_sent": {
+            "count": 18728,
+            "rate": 1217.3049050905045
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 44.373316,
+            "med": 61.725503,
+            "max": 993.659864,
+            "p(90)": 345.0185102000006,
+            "p(95)": 848.7454657499984,
+            "avg": 142.95755240625
+        },
+        "http_req_duration{name:warmup}": {
+            "avg": 57.091146249999994,
+            "min": 46.299537,
+            "med": 56.9376395,
+            "max": 68.189769,
+            "p(90)": 67.5952932,
+            "p(95)": 67.8925311,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_duration{name:check}": {
+            "p(90)": 115.76587110000013,
+            "p(95)": 312.28896109999937,
+            "avg": 86.62708523333335,
+            "min": 44.373316,
+            "med": 48.6597225,
+            "max": 610.724798,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        }
+    },
+    "root_group": {
+        "checks": {
+            "login returns a session token": {
+                "id": "22d9ae862c9cf3169b7860f69899ba04",
+                "passes": 30,
+                "fails": 0,
+                "name": "login returns a session token",
+                "path": "::login returns a session token"
+            },
+            "the token belongs to the user": {
+                "name": "the token belongs to the user",
+                "path": "::the token belongs to the user",
+                "id": "8549a57452f64568d2ae254507457ded",
+                "passes": 30,
+                "fails": 0
+            }
+        },
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "login returns a session token": {
+                            "name": "login returns a session token",
+                            "path": "::setup::login returns a session token",
+                            "id": "a437eb0f7f5bbc07dba8ba33bed45c34",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "the token belongs to the user": {
+                            "path": "::setup::the token belongs to the user",
+                            "id": "c282848941e4174d8ab4798482479569",
+                            "passes": 2,
+                            "fails": 0,
+                            "name": "the token belongs to the user"
+                        }
+                    }
+            }
+        }
+    }
+}

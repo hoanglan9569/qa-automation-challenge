@@ -1,0 +1,210 @@
+{
+    "metrics": {
+        "data_received": {
+            "count": 42295,
+            "rate": 2693.186907685388
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "http_req_connecting": {
+            "avg": 0.452494196969697,
+            "min": 0,
+            "med": 0,
+            "max": 10.671179,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_sent": {
+            "rate": 966.6691203587156,
+            "count": 15181
+        },
+        "iteration_duration": {
+            "p(90)": 236.589491,
+            "p(95)": 242.336614,
+            "avg": 215.30834448387097,
+            "min": 186.155556,
+            "med": 214.336031,
+            "max": 289.911971
+        },
+        "http_req_duration": {
+            "avg": 106.71741795454544,
+            "min": 77.231126,
+            "med": 103.772787,
+            "max": 189.667608,
+            "p(90)": 132.09910250000001,
+            "p(95)": 135.57785225
+        },
+        "http_reqs": {
+            "count": 66,
+            "rate": 4.202632365698915
+        },
+        "cart_page": {
+            "med": 214,
+            "max": 290,
+            "p(90)": 237,
+            "p(95)": 242,
+            "avg": 215.41935483870967,
+            "min": 186,
+            "thresholds": {
+                "med<1500": false,
+                "p(95)<3500": false
+            }
+        },
+        "http_req_duration{name:warmup}": {
+            "p(95)": 142.59036215,
+            "avg": 111.680329,
+            "min": 81.045177,
+            "med": 110.69421399999999,
+            "max": 144.287711,
+            "p(90)": 140.8930133,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_duration{name:viewcart}": {
+            "max": 189.667608,
+            "p(90)": 134.719721,
+            "p(95)": 148.340644,
+            "avg": 123.06012877419354,
+            "min": 98.373043,
+            "med": 120.826777,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 66,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "iterations": {
+            "count": 31,
+            "rate": 1.9739636869191874
+        },
+        "http_req_receiving": {
+            "med": 0.0835505,
+            "max": 0.692175,
+            "p(90)": 0.113871,
+            "p(95)": 0.13946775,
+            "avg": 0.10351356060606062,
+            "min": 0.051067
+        },
+        "http_req_duration{name:view}": {
+            "avg": 89.73433151612905,
+            "min": 77.231126,
+            "med": 86.842778,
+            "max": 109.242942,
+            "p(90)": 99.577681,
+            "p(95)": 102.39866,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": false
+            }
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "checks": {
+            "passes": 66,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "http_req_waiting": {
+            "min": 77.080305,
+            "med": 103.230294,
+            "max": 189.470973,
+            "p(90)": 131.895799,
+            "p(95)": 135.2370515,
+            "avg": 106.50088330303028
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 20.202423,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.8884984393939394,
+            "min": 0
+        },
+        "http_req_sending": {
+            "avg": 0.11302109090909089,
+            "min": 0.062724,
+            "med": 0.088283,
+            "max": 0.775506,
+            "p(90)": 0.1486635,
+            "p(95)": 0.15571125
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 77.231126,
+            "med": 103.772787,
+            "max": 189.667608,
+            "p(90)": 132.09910250000001,
+            "p(95)": 135.57785225,
+            "avg": 106.71741795454544
+        },
+        "http_req_blocked": {
+            "avg": 1.362787621212122,
+            "min": 0.00017,
+            "med": 0.000251,
+            "max": 30.987663,
+            "p(90)": 0.00032050000000000004,
+            "p(95)": 0.0005434999999999999
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "checks": {
+                    "cart holds the 1 seeded lines": {
+                        "passes": 2,
+                        "fails": 0,
+                        "name": "cart holds the 1 seeded lines",
+                        "path": "::setup::cart holds the 1 seeded lines",
+                        "id": "b047dd30e0459a95aa65c4e978330125"
+                    },
+                    "every line resolves to a product": {
+                        "name": "every line resolves to a product",
+                        "path": "::setup::every line resolves to a product",
+                        "id": "8e67ba4ebc626f5c0ed88b63ccbfdcb6",
+                        "passes": 2,
+                        "fails": 0
+                    }
+                },
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {}
+            }
+        },
+        "checks": {
+            "cart holds the 1 seeded lines": {
+                "name": "cart holds the 1 seeded lines",
+                "path": "::cart holds the 1 seeded lines",
+                "id": "3b3332fcc0daa4f8a326e63c9486759b",
+                "passes": 31,
+                "fails": 0
+            },
+            "every line resolves to a product": {
+                "id": "47c3301cafb2e50e62aebc6a4b3cabbc",
+                "passes": 31,
+                "fails": 0,
+                "name": "every line resolves to a product",
+                "path": "::every line resolves to a product"
+            }
+        }
+    }
+}

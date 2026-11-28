@@ -1,0 +1,228 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "min": 59.5328,
+            "med": 148.4012265,
+            "max": 2461.991871,
+            "p(90)": 1243.117876299997,
+            "p(95)": 2171.126175,
+            "avg": 419.74042833333334
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 25.26425,
+            "p(90)": 0,
+            "p(95)": 9.245434449999955,
+            "avg": 1.077891217948718,
+            "min": 0
+        },
+        "http_req_sending": {
+            "avg": 0.11376373076923077,
+            "min": 0.064871,
+            "med": 0.110225,
+            "max": 0.197297,
+            "p(90)": 0.1521255,
+            "p(95)": 0.16400774999999992
+        },
+        "iterations": {
+            "rate": 1.5181286525590663,
+            "count": 24
+        },
+        "http_req_duration{name:viewcart}": {
+            "avg": 449.95732933333335,
+            "min": 63.621785,
+            "med": 146.00219850000002,
+            "max": 2461.991871,
+            "p(90)": 1625.563352399999,
+            "p(95)": 2131.1133964499995,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": true
+            }
+        },
+        "vus": {
+            "max": 5,
+            "value": 0,
+            "min": 0
+        },
+        "http_req_failed": {
+            "fails": 78,
+            "passes": 0,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "http_req_duration{name:deleteitem}": {
+            "avg": 258.6227925833333,
+            "min": 63.958385,
+            "med": 156.196861,
+            "max": 944.749846,
+            "p(90)": 656.5924772,
+            "p(95)": 766.3714052499997,
+            "thresholds": {
+                "p(95)<2000": false,
+                "med<500": false
+            }
+        },
+        "data_received": {
+            "count": 51747,
+            "rate": 3273.275140998917
+        },
+        "http_req_connecting": {
+            "p(95)": 2.4738885,
+            "avg": 0.2076381025641026,
+            "min": 0,
+            "med": 0,
+            "max": 3.172557,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "med": 148.19037550000002,
+            "max": 2461.72824,
+            "p(90)": 1242.9235701999971,
+            "p(95)": 2170.92316155,
+            "avg": 419.5235050897436,
+            "min": 59.280719
+        },
+        "checks": {
+            "passes": 78,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "dropped_iterations": {
+            "count": 7,
+            "rate": 0.442787523663061
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 419.74042833333334,
+            "min": 59.5328,
+            "med": 148.4012265,
+            "max": 2461.991871,
+            "p(90)": 1243.117876299997,
+            "p(95)": 2171.126175
+        },
+        "iteration_duration": {
+            "avg": 1345.329868666667,
+            "min": 230.889848,
+            "med": 513.7001475,
+            "max": 5476.21825,
+            "p(90)": 4565.337331,
+            "p(95)": 5127.7364437999995
+        },
+        "vus_max": {
+            "value": 5,
+            "min": 2,
+            "max": 5
+        },
+        "http_req_duration{name:warmup}": {
+            "min": 59.5328,
+            "med": 91.426781,
+            "max": 127.968669,
+            "p(90)": 116.27819099999999,
+            "p(95)": 122.12343,
+            "avg": 92.85604516666666,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_reqs": {
+            "count": 78,
+            "rate": 4.933918120816966
+        },
+        "data_sent": {
+            "count": 25562,
+            "rate": 1616.9335256964523
+        },
+        "http_req_blocked": {
+            "min": 0.00027,
+            "med": 0.0004155,
+            "max": 28.569586,
+            "p(90)": 0.0007412999999999997,
+            "p(95)": 11.975464599999947,
+            "avg": 1.3111658846153844
+        },
+        "http_req_receiving": {
+            "avg": 0.1031595128205128,
+            "min": 0.058182,
+            "med": 0.0913985,
+            "max": 0.490102,
+            "p(90)": 0.1338491,
+            "p(95)": 0.1418459999999999
+        },
+        "http_req_duration{name:addtocart}": {
+            "avg": 632.3622588750001,
+            "min": 76.96562,
+            "med": 223.61704300000002,
+            "max": 2446.69203,
+            "p(90)": 2168.4557912,
+            "p(95)": 2229.9055076,
+            "thresholds": {
+                "med<500": false,
+                "p(95)<2000": true
+            }
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a",
+                "groups": {},
+                "checks": {
+                        "line is added": {
+                            "name": "line is added",
+                            "path": "::setup::line is added",
+                            "id": "34f18ee803170bf7c1a13c7f97da6ea8",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "cart contains the new line": {
+                            "passes": 2,
+                            "fails": 0,
+                            "name": "cart contains the new line",
+                            "path": "::setup::cart contains the new line",
+                            "id": "c53f3c490abfa4a34100c534d8269bc5"
+                        },
+                        "line is deleted": {
+                            "name": "line is deleted",
+                            "path": "::setup::line is deleted",
+                            "id": "ca43217342004ff4e672f1b95875377f",
+                            "passes": 2,
+                            "fails": 0
+                        }
+                    },
+                "name": "setup",
+                "path": "::setup"
+            }
+        },
+        "checks": {
+            "line is added": {
+                "name": "line is added",
+                "path": "::line is added",
+                "id": "52aa627bbdf1a387497bcb7ad57cc75c",
+                "passes": 24,
+                "fails": 0
+            },
+            "cart contains the new line": {
+                "id": "6fc24be4716a8e4ed2950b768215f3b7",
+                "passes": 24,
+                "fails": 0,
+                "name": "cart contains the new line",
+                "path": "::cart contains the new line"
+            },
+            "line is deleted": {
+                "fails": 0,
+                "name": "line is deleted",
+                "path": "::line is deleted",
+                "id": "ff4846606573aed71ea58151610feeb6",
+                "passes": 24
+            }
+        },
+        "name": "",
+        "path": ""
+    }
+}

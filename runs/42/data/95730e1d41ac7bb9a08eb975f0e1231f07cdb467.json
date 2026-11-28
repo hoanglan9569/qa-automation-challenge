@@ -1,0 +1,202 @@
+{
+    "metrics": {
+        "checks": {
+            "passes": 58,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.99": false
+            },
+            "value": 1
+        },
+        "http_reqs": {
+            "count": 58,
+            "rate": 2.972093226522442
+        },
+        "dropped_iterations": {
+            "count": 3,
+            "rate": 0.15372895999254008
+        },
+        "vus": {
+            "max": 4,
+            "value": 1,
+            "min": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.08072379310344827,
+            "min": 0.017836,
+            "med": 0.048813499999999996,
+            "max": 0.951111,
+            "p(90)": 0.12449640000000008,
+            "p(95)": 0.20633799999999997
+        },
+        "iteration_duration": {
+            "avg": 1728.805866148148,
+            "min": 1165.96178,
+            "med": 1742.59738,
+            "max": 2057.163418,
+            "p(90)": 1917.111664,
+            "p(95)": 1964.9796289
+        },
+        "http_req_duration{name:warmup}": {
+            "avg": 763.6227345000001,
+            "min": 705.28909,
+            "med": 765.1014640000001,
+            "max": 818.99892,
+            "p(90)": 814.586589,
+            "p(95)": 816.7927545,
+            "thresholds": {
+                "max>=0": false
+            }
+        },
+        "http_req_blocked": {
+            "p(90)": 8.725799700000124,
+            "p(95)": 32.12564695,
+            "avg": 3.3238960689655164,
+            "min": 0.00013,
+            "med": 0.00029,
+            "max": 34.215113
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 58,
+            "thresholds": {
+                "rate<=0.01": false
+            },
+            "value": 0
+        },
+        "data_received": {
+            "count": 50665,
+            "rate": 2596.2259193406812
+        },
+        "http_req_sending": {
+            "med": 0.0524935,
+            "max": 0.115443,
+            "p(90)": 0.07769210000000003,
+            "p(95)": 0.08758379999999996,
+            "avg": 0.05596439655172415,
+            "min": 0.02669
+        },
+        "vus_max": {
+            "min": 2,
+            "max": 5,
+            "value": 5
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 23.917968,
+            "p(90)": 5.364368700000076,
+            "p(95)": 19.2320736,
+            "avg": 2.0542165,
+            "min": 0
+        },
+        "iterations": {
+            "rate": 1.3835606399328608,
+            "count": 27
+        },
+        "http_req_duration{name:check}": {
+            "min": 703.344568,
+            "med": 839.416367,
+            "max": 1080.78602,
+            "p(90)": 1050.7848950000002,
+            "p(95)": 1077.1227444,
+            "avg": 869.8044547037038,
+            "thresholds": {
+                "p(95)<2000": false,
+                "med<500": true
+            }
+        },
+        "http_req_connecting": {
+            "avg": 1.2468785862068967,
+            "min": 0,
+            "med": 0,
+            "max": 14.063536,
+            "p(90)": 2.8333470000000403,
+            "p(95)": 12.4618376
+        },
+        "data_sent": {
+            "rate": 1081.1245326408703,
+            "count": 21098
+        },
+        "http_req_duration": {
+            "avg": 854.5782563620688,
+            "min": 347.340226,
+            "med": 833.025828,
+            "max": 1170.456003,
+            "p(90)": 1052.506338,
+            "p(95)": 1073.7030413
+        },
+        "http_req_duration{name:login}": {
+            "p(95)": 1066.8703849,
+            "avg": 852.8269501481482,
+            "min": 347.340226,
+            "med": 838.363972,
+            "max": 1170.456003,
+            "p(90)": 1053.228583,
+            "thresholds": {
+                "med<500": true,
+                "p(95)<2000": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 854.5782563620688,
+            "min": 347.340226,
+            "med": 833.025828,
+            "max": 1170.456003,
+            "p(90)": 1052.506338,
+            "p(95)": 1073.7030413
+        },
+        "http_req_waiting": {
+            "p(95)": 1073.5565738999999,
+            "avg": 854.4415681724138,
+            "min": 347.225714,
+            "med": 832.914449,
+            "max": 1170.315575,
+            "p(90)": 1052.3673549
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "setup": {
+                "groups": {},
+                "checks": {
+                        "login returns a session token": {
+                            "name": "login returns a session token",
+                            "path": "::setup::login returns a session token",
+                            "id": "a437eb0f7f5bbc07dba8ba33bed45c34",
+                            "passes": 2,
+                            "fails": 0
+                        },
+                        "the token belongs to the user": {
+                            "name": "the token belongs to the user",
+                            "path": "::setup::the token belongs to the user",
+                            "id": "c282848941e4174d8ab4798482479569",
+                            "passes": 2,
+                            "fails": 0
+                        }
+                    },
+                "name": "setup",
+                "path": "::setup",
+                "id": "5c0f8025f7e0b6654089e5b00e950f1a"
+            }
+        },
+        "checks": {
+            "login returns a session token": {
+                "id": "22d9ae862c9cf3169b7860f69899ba04",
+                "passes": 27,
+                "fails": 0,
+                "name": "login returns a session token",
+                "path": "::login returns a session token"
+            },
+            "the token belongs to the user": {
+                "path": "::the token belongs to the user",
+                "id": "8549a57452f64568d2ae254507457ded",
+                "passes": 27,
+                "fails": 0,
+                "name": "the token belongs to the user"
+            }
+        }
+    }
+}
